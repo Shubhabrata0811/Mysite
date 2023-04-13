@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wgth@300;400;500;600;700;800;900&display=swap');
+
+*   {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bar-color: #333;
+    --text-color: rgba(17, 144, 207, 0.966);
+    --main-color: rgb(12, 139, 139);
+    --bg-color: rgba(185, 255, 246, 0.966);
+    --shadow-color: rgb(00,00,00);
+}
+
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background: rgba(1, 10, 65, 0.945);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: default;
+    color: var(--text-color);
+    margin-right: auto;
+}
+
+.navigationbar a {
+    position: relative;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-right: 3.5rem;
+    transition: 0.3s;
+}
+
+.navigationbar a:hover{
+    color: aqua;
+}
+
+.navigationbar a.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: .2px;
+    bottom: -6px;
+    background: var(--bg-color);
+}
+
+#darkmodeicon{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.main1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.main1content h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.main1content h2{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.main1content h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+span{
+    color: ;
+    font-size: 3.2rem;
+}
+
+.socialmedia a{
+    color: var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    margin: 3rem 1.5rem 3rem 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+.socialmedia a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem aquamarine;
+}
