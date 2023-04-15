@@ -17,6 +17,7 @@
     --main-color: rgb(12, 139, 139);
     --bg-color: rgba(185, 255, 246, 0.966);
     --shadow-color: rgb(00,00,00);
+    --trd-color: rgb(0, 255, 179);
 }
 
 html{
@@ -44,6 +45,12 @@ section{
     display: flex;
     align-items: center;
     z-index: 100;
+    transition: 0.5s;
+}
+
+.header.sticky{
+    background: var(--main-color);
+    box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
 
 .logo{
@@ -68,6 +75,10 @@ section{
     color: aqua;
 }
 
+.header.sticky.navigationbar a{
+    color: var(--main-color);
+}
+
 .navigationbar a.active::before{
     content: '';
     position: absolute;
@@ -82,6 +93,13 @@ section{
     font-size: 2.5rem;
     cursor: pointer;
     color: var(--text-color);
+}
+
+#menuicon{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
 }
 
 .main1{
@@ -106,7 +124,7 @@ section{
 }
 
 span{
-    color: ;
+    color: var(--main-color);
     font-size: 3.2rem;
 }
 
@@ -131,4 +149,150 @@ span{
     background: var(--main-color);
     color: var(--bg-color);
     box-shadow: 0 0 1rem aquamarine;
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutpic {
+    width: 400px; /* Set the desired width of the container */
+    height: 400px; /* Set the desired height of the container */
+    overflow: hidden; /* Hide the overflow of the image */
+    border-radius: 25%; /* Set the border-radius property to 50% for a circular shape */
+}
+
+/* Define the image */
+.aboutpic img {
+    width: 100%; /* Set the width of the image to 100% to fit the container */
+    height: auto; /* Set the height of the image to auto to maintain its aspect ratio */
+    object-fit: cover; /* Apply object-fit: cover to ensure the image covers the entire container */
+}
+
+.button{
+    cursor: pointer;
+    color: var(--bg-color);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background: var(--main-color);
+    border-radius: 3rem;
+    box-shadow: 0 0 1rem;
+    transition: 0.5s ease;
+}
+
+.button:hover{
+    color: var(--main-color);
+    background: var(--bg-color);
+    box-shadow: 0 0 1rem black;
+}
+
+.project h2{
+    margin-bottom: 5rem;
+}
+
+.projectscontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.projectscontent .projectbox{
+    flex: 1 1 30rem;
+    background: var(--main-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--trd-color);
+}
+
+.projectbox{
+    transition: 0.5s;
+}
+
+.projectbox i{
+    font-size: 7rem;
+    color: var(--trd-color);
+}
+
+.projectscontent .projectbox p{
+    color:var(--trd-color);
+}
+
+.contacts h2{
+    margin-bottom: 3rem;
+}
+
+.contacts form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contacts form .inputbox{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts form .inputbox input,
+.contacts form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    background: var(--trd-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+
+}
+
+.contacts form .inputbox input{
+    width: 49.5%;
+}
+
+.contacts form textarea{
+    resize: none;
+}
+
+.footer{
+    height: 10;
+    width: 100%; /* Set the width of the footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--trd-color);
+  }
+
+  .footercontent{
+    font-size: 1.5rem;
+  }
+  
+.footer_icon_to_Top a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8ren;
+    background: var(--main-color);
+    border-radius: 0.8rem;
+}
+
+.footer_icon_to_Top a i{
+    font-size: 2.4rem;
+    color: var(--trd-color);
+}
+
+.footer_icon_to_Top a :hover{
+    background: var(--bg-color);
+    color: var(--main-color);
+    box-shadow: 0 0 1rem var(--shadow-color);
+    border-radius: 0.8rem;
 }

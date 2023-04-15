@@ -8,26 +8,18 @@
 
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="style/style.css">
+
     </head>
 
-    <body>
-        <script>
-            const typed = new Typed('.multitxt', {
-              strings: ['Computer Science Student', 'Learning AI & ML', 'Learning Cloud Computing', 'Front-end Developer'],
-              typeSpeed: 100,
-              backSpeed: 100,
-              backDelay: 1000,
-              loop: true
-            });
-        </script>
-          
+    <body>   
         <header class="header">
-            <a herf="#" class="logo">Shubhabrata Ghosh</a>
+            <a href="#" class="logo">Shubhabrata Ghosh</a>
+            <i class='bx bx-menu' id="menuicon"></i>
             <nav class="navigationbar">
-                <a herf="#home" class="active">Home</a>
-                <a herf="#about">About</a>
-                <a herf="#projects">Projects</a>
-                <a herf="#contacts">Contact Me</a>
+                <a href="#main1" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contact Me</a>
             </nav>
             <dev class="bx bx-moon" id="darkmodeicon"></dev>
         </header>
@@ -43,16 +35,99 @@
                 <h3>and I'm a <b><span>Computer Science Student</span></b></h3>
                 <p></p>
                 <div class="socialmedia">
-                    <a herf="#"><i class='bx bxl-github' ></i></a>
-                    <a herf="#"><i class='bx bxl-linkedin-square' ></i></a>
-                    <a herf="#"><i class='bx bxl-facebook-circle'></i></a>
-                    <a herf="#"><i class='bx bxl-instagram-alt' ></i></a>
-                    <a herf="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
                 </div>
             </div>
 
         </section>
 
+        <section class="about" id="about">
+            <div class="aboutcontent">
+                <h2>About me</h2>
+                <h3><b><font size="3">Hello, I'm </font><font size="7">Shubhabrata Ghosh,</font></b></h3>
+                <font size="3">
+                <p>a passionate and driven individual currently studying computer science technology.<br>
+                     My love for technology has led me to explore various areas, including <br><b>software engineering and developing,
+                     cloud computing, Machine Learning (ML), Artificial Intelligence (AI).</b>
+                </p>
+                <a href="#" class="button">Read More</a>
+                </font>
+            </div>
 
+            <div class="aboutpic">
+                <img src="images/IMG_20230414_121701-removebg-r.png" alt="" width="394" height="473">
+            </div>
+
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="projectscontent">
+                <div class="projectbox">
+                        <i class='bx bx-code-alt'></i><br>
+                        <p>A personal website using HTML-CSS-JS</p><br>
+                        <a href="#" class="button">Personal website</a>
+                </div>
+
+                <div class="projectbox">
+                        <i class='bx bxl-c-plus-plus'></i><br>
+                        <p>Object Oriented Programming projects using C++</p><br>
+                        <a href="#" class="button">OOP C++</a>
+                </div>
+
+                <div class="projectbox">
+                        <i class='bx bxl-java' ></i><br>
+                        <p>Object Oriented Programming projects using JAVA</p><br>
+                        <a href="#" class="button">OOP java</a>
+                        
+                </div>
+                <div class="projectbox">
+                        <i class='bx bxl-python' ></i><br>
+                        <p>Some automation projects using Python</p><br>
+                        <a href="#" class="button">Python</a>
+
+                </div>
+                <div class="projectbox">
+                    <i class='bx bxl-flutter' ></i><br>
+                    <p>Applications using Flutter</p><br>
+                    <a href="#" class="button">Flutter</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h2>Contact Me</h2>
+
+            <form action="#">
+                <div class="inputbox">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class ="button">
+            </form>
+        </section>
+
+        <footer class="footer" >
+            <div class="footercontent">
+                <p>Copyright &copy; 2023 by Shubhabrata Ghosh | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer_icon_to_Top">
+                <a href="#main1" class="active">
+                    <i class='bx bxs-to-top' ></i>
+                </a>
+            </div>
+        </footer>
+
+        <script src="jscript/script.js"></script>
     </body>
 </html>
