@@ -66,7 +66,7 @@ btns.forEach(function (btn, index) {
 
 
 /*Scrolling effect*/
-
+/*
 ScrollReveal({
     reset: true ,
     distance: '80px',
@@ -74,4 +74,4 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.main1image', { origin: 'top' });
+ScrollReveal().reveal('.main1image', { origin: 'top' });*/
