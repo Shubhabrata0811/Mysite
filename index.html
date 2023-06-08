@@ -5,14 +5,17 @@
         <meta http-equiv="X-UA-Compstible" contenr="IE=edge">
         <meta name="viewport" content="weidth=device-weidth, initial-scale=1.0">
         <title>Shubhabrata Ghosh</title>
-
+        <script src="jscript/script.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="style/style.css">
         <link rel="script" href="jscript/script.js">
 
     </head>
 
-    <body>   
+    <body>  
+
         <header class="header" id="header">
             <a href="#" class="logo">Shubhabrata Ghosh</a>
             <i class='bx bx-menu' id="menuicon"></i>
@@ -28,13 +31,23 @@
 
         <section class="main1" id="main1">
             <div class="main1image">
-                <img src="images/mainpic.png" alt="" width="550" height="550" class="shaded-image">
+                <img src="images/mainpic.png" alt="" width="500" height="500" class="shaded-image">
             </div>
 
             <div class="main1content">
                 <h2>Hi! It's</h2>
                 <h1>Shubhabrata Ghosh</h1>
-                <h3>and I'm a <b><span>Computer Science Student</span></b></h3>
+                <h3>and I'm <t></t> <b><span id="element"></span></b></h3>
+                <script>
+                    var typed = new Typed('#element', {
+                      strings: ['a Computer Sc. Student', 'an Open Source Contributor', 'a Cloud Enthusiast', 'a Software Developer'],
+                      typeSpeed: 50,
+                      backSpeed: 50,
+                      backDelay: 1000,
+                      loop: true,
+                      cursorChar: '_'
+                    });
+                </script>
                 <p></p>
                 <div class="socialmedia">
                     <a href="https://github.com/Shubhabrata0811"><i class='bx bxl-github' ></i></a>
@@ -134,10 +147,6 @@
                 </a>
             </div>
         </footer>
-
-        <script src="jscript/script.js"></script>
-
-        <script src="https://unpkg.com/scrollreveal"></script>
 
     </body>
 </html>
