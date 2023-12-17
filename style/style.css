@@ -97,6 +97,18 @@ section{
     font-size: 2.5rem;
     cursor: pointer;
     color: var(--text-color);
+    margin-right: 20px;
+}
+
+#playMusicButton{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  background: rgba(1, 10, 65, 0.945);
+}
+
+#playMusicButton:hover{
+  color: aqua;
 }
 
 #menuicon{
@@ -137,7 +149,7 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
+    width: 4rem; 
     height: 4rem;
     background: transparent;
     border: 0.2rem solid;
@@ -146,7 +158,119 @@ span{
     margin: 3rem 1.5rem 3rem 0;
     cursor: pointer;
     transition: 0.5s ease;
+    animation: cch 4s infinite ease-in-out;
 }
+
+@keyframes cch {
+  0% {
+    color: var(--main-color);
+  }
+  50% {
+    color: var(--bg-color);
+  }
+  100% {
+    color: var(--main-color);
+  }
+}
+
+@keyframes sparkle1 {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.5);
+      box-shadow: 0 0 1rem white;
+    }
+    100% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+  
+  @keyframes sparkle2 {
+    /* Same as sparkle1 but delayed by 0.2s */
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.5);
+      box-shadow: 0 0 1rem white;
+    }
+    100% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+  
+  @keyframes sparkle3 {
+    /* Same as sparkle1 but delayed by 0.4s */
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.5);
+      box-shadow: 0 0 1rem white;
+    }
+    100% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+  
+  @keyframes sparkle4 {
+    /* Same as sparkle1 but delayed by 0.6s */
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.5);
+      box-shadow: 0 0 1rem white;
+    }
+    100% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+  
+  @keyframes sparkle5 {
+    /* Same as sparkle1 but delayed by 0.8s */
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.5);
+      box-shadow: 0 0 1rem white;
+    }
+    100% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+  
+  .socialmedia a:nth-child(1) {
+    animation: sparkle1 2s infinite ease-in-out;
+    animation-delay: 0s;
+  }
+  
+  .socialmedia a:nth-child(2) {
+    animation: sparkle2 2s infinite ease-in-out;
+    animation-delay: 0.2s;
+  }
+  
+  .socialmedia a:nth-child(3) {
+    animation: sparkle3 2s infinite ease-in-out;
+    animation-delay: 0.4s;
+  }
+  
+  .socialmedia a:nth-child(4) {
+    animation: sparkle4 2s infinite ease-in-out;
+    animation-delay: 0.6s;
+  }
+  
+  .socialmedia a:nth-child(5) {
+    animation: sparkle5 2s infinite ease-in-out;
+    animation-delay: 0.8s;
+  }
 
 
 .socialmedia a:hover{
@@ -157,7 +281,7 @@ span{
 
 
 .about{
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
@@ -265,7 +389,7 @@ span{
     resize: none;
 }
 
-.footer{
+.footer{ 
     height: 10;
     width: 100%; /* Set the width of the footer */
     display: flex;
@@ -385,3 +509,21 @@ span{
         font-size: 3rem;
     }
 }
+
+
+/*body {
+    background-color: var(--bg-color);
+    animation: blink 4s infinite ease-in-out;
+  }
+  
+  @keyframes blink {
+    0% {
+      background-color: var(--bg-color);
+    }
+    50% {
+      background-color: #000000;
+    }
+    100% {
+      background-color: var(--bg-color);
+    }
+  }*/

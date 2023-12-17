@@ -14,8 +14,8 @@
 
     </head>
 
-    <body>  
-
+    <body>
+        
         <header class="header" id="header">
             <a href="#" class="logo">Shubhabrata Ghosh</a>
             <i class='bx bx-menu' id="menuicon"></i>
@@ -27,6 +27,20 @@
                 <a href="#contacts" class="nactive">Contact Me</a>
             </nav>
             <dev class="bx bx-moon" id="darkmodeicon"></dev>
+            <button id="playMusicButton" class='bx bx-play bx-tada'></button>
+
+            <audio id="bgMusic" controls loop hidden>
+                <source src="music/bgmusic1.mp3" type="audio/mp3">
+            </audio>
+
+            <script>
+                const playMusicButton = document.getElementById('playMusicButton');
+                const bgMusic = document.getElementById('bgMusic');
+
+                playMusicButton.addEventListener('click', () => {
+                    bgMusic.play();
+                });
+            </script>
         </header>
 
         <section class="main1" id="main1">
@@ -57,8 +71,8 @@
                     <a href="https://twitter.com/Shubhabrata_11"><i class='bx bxl-twitter' ></i></a>
                 </div>
             </div>
-
         </section>
+
 
         <section class="about" id="about">
             <div class="aboutcontent">

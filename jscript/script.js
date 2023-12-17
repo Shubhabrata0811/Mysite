@@ -65,22 +65,8 @@ btns.forEach(function (btn, index) {
 });
 
 
-/*Multiple roles
-var typed = new Typed('#element', {
-  strings: ['Computer Science Student','Open Source Contributer','Cloude Enthusiast','Software Developer'],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
-  loop:true
-});*/
-/*Scrolling effect*/
-/*
-ScrollReveal({
-    reset: true ,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
 
-ScrollReveal().reveal('.main1image', { origin: 'top' });*/
+ScrollReveal().reveal('.main1image', { origin: 'top' });
+
+
 
