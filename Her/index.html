@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta name="viewport" content="=width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    </head>
+
+    <body>
+
+        <section class="main1" id="main1">
+            <center>
+                <div class="outrndiv" id="hide1">
+                    <div class="rndiv" id="hide2">
+                        <h1 ><span id="element"></span></h1>
+                        <script>
+                            var typed = new Typed('#element', {
+                            strings: ['"বেঁধেছ প্রেমের পাশে ওহে প্রেমময়,<br><br> তব প্ৰেম লাগি দিবানিশি জাগি ব্যাকুল হৃদয়।','"জাগিবে একাকী, তব করুণ আঁখি  <br><br> তব অঞ্চল-ছায়া মোরে রহিবে ঢাকি।','"আমার লতার একটি মুকুল <br><br> ভুলিয়া তুলিয়া রেখো তোমার অলকবন্ধনে <br><br> আমার স্মরণ শুভ-সিন্দুরে <br><br> একটি বিন্দু এঁকো তোমার ললাট চন্দনে।','"তুমি সন্ধ্যার মেঘমালা,<br><br> তুমি আমার সাধের সাধনা,<br><br> মম শূন্যগগনবিহারী।','"আমি তোমার বিরহে রহিব বিলীন<br><br> তোমাতে করিব বাস।','"তুমি প্রশান্ত চিরনিশিদিন,<br><br>আমি অশান্ত বিরামবিহীন<br><br>চঞ্চল অনিবার–<br><br>যত দূর হেরি দিক্দিগন্তে<br><br>তুমি আমি একাকার।','"সত্য কথা সরলভাবে<br>শুনিয়ে দিতে তোরে<br>সাহস নাহি পাই।<br><br>অবিশ্বাসে হাসবি কিনা<br>বুঝব কেমন করে?<br><br>মিথ্যা ছলে তাই<br>শুনিয়ে দিয়ে যাই,<br>উল্টা করে বলি আমি<br>সহজ কথাটাই।'],
+                            typeSpeed: 25,
+                            backSpeed: 15,
+                            backDelay: 2000,
+                            loop: true,
+                            cursorChar: '"'
+                            });
+                        </script>
+                    </div>
+                </div>
+                <button id="playButton"><span class="jumpingDots" style="--delay:0;">.</span><span class="jumpingDots" style="--delay:0.5;">.</span><span class="jumpingDots" style="--delay:1;">.</span><span class="jumpingDots" style="--delay:1.5;">.</span><span class="jumpingDots" style="--delay:2;">.</span></button>
+                <audio id="bgMusic" controls loop hidden>
+                    <source src="music/tumirobenirobebg.mp3" type="audio/mp3">
+                </audio>
+
+                <style>
+                #hide1 {
+                    opacity: 1;
+                    transition: opacity 1s ease-in-out;
+                }
+                #hide2 {
+                    opacity: 1;
+                    transform: scale(1);
+                    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+                }
+                </style>
+
+            </center>
+        </section>
+
+        <div id="hidden-content" style="display: none;">
+            <ul class='slider'>
+            <li class='item it1' id="img6" style="background-image: url('images/gencraft_image_1705783744032-1.png')">
+                <div class='content'>
+                <h2 class='title'>"Lossless Youths"</h2>
+                <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                praesentium nisi. Id laboriosam ipsam enim.  </p>
+                <button>Read More</button>
+                </div>
+            </li>
+            <li class='item it2' id="img5" style="background-image: url('images/gencraft_image_1705831807261-1.png')">
+                <div class='content'>
+                <h2 class='title'>"Anupam Ray"</h2>
+                <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                praesentium nisi. Id laboriosam ipsam enim.  </p>
+                <button>Read More</button>
+                </div>
+            </li>
+            <li class='item it3' id="img4" style="background-image: url('images/gencraft_image_1705831816750-1.png')">
+                <div class='content'>
+                <h2 class='title'>"The Gate Keeper"</h2>
+                <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                praesentium nisi. Id laboriosam ipsam enim.  </p>
+                <button>Read More</button>
+                </div>
+            </li>
+            <li class='item it4' id="img3" style="background-image: url('images/gencraft_image_1705831868431-1.png')">
+                <div class='content'>
+                <h2 class='title'>"Last Trace Of Us"</h2>
+                <p class='description'>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+                </p>
+                <button>Read More</button>
+                </div>
+            </li>
+            <li class='item it5' id="img2" style="background-image: url('images/gencraft_image_1705831924029-1.png')">
+                <div class='content'>
+                <h2 class='title'>"Urban Decay"</h2>
+                <p class='description'>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+                </p>
+                <button>Read More</button>
+                </div>
+            </li>
+            <li class='item it6' id="img1" style="background-image: url('images/gencraft_image_1705783744032-1.png')">
+                <div class='content'>
+                <h2 class='title'>"The Migration"</h2>
+                <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                praesentium nisi. Id laboriosam ipsam enim.  </p>
+                <button>Read More</button>
+                </div>
+            </li>
+            </ul>
+            <nav class='nav'>
+            <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+            <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+            </nav>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

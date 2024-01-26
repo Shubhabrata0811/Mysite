@@ -1,0 +1,194 @@
+বেঁধেছ প্রেমের পাশে ওহে প্রেমময়, তব প্ৰেম লাগি দিবানিশি জাগি ব্যাকুল হৃদয়।
+
+জাগিবে একাকী, তব করুণ আঁখি
+তব অঞ্চল-ছায়া মোরে রহিবে ঢাকি
+
+আমি তোমার বিরহে রহিব বিলীন
+তোমাতে করিব বাস
+
+তুমি সন্ধ্যার মেঘমালা, তুমি আমার সাধের সাধনা,  মম    শূন্যগগনবিহারী।
+
+আমার লতার একটি মুকুল
+ভুলিয়া তুলিয়া রেখো তোমার অলকবন্ধনে
+আমার স্মরণ শুভ-সিন্দুরে
+একটি বিন্দু এঁকো তোমার ললাট চন্দনে
+
+চমকিবে ফাগুনেরও পবনে
+পশিবে আকাশবানী শ্রবণে
+চিত্ত আকুল হবে অনুখন অকারণ।
+
+তুমি প্রশান্ত চিরনিশিদিন,
+আমি অশান্ত বিরামবিহীন
+চঞ্চল অনিবার–
+যত দূর হেরি দিক্দিগন্তে
+তুমি আমি একাকার।
+
+তোমার কাননতলে ফাল্গুন আসিবে বারম্বার,
+তাহারি একটি শুধু মাগি আমি দুয়ারে তোমার।
+
+সত্য কথা সরলভাবে
+শুনিয়ে দিতে তোরে
+সাহস নাহি পাই।
+অবিশ্বাসে হাসবি কিনা
+বুঝব কেমন করে?
+মিথ্যা ছলে তাই
+শুনিয়ে দিয়ে যাই,
+উল্টা করে বলি আমি
+সহজ কথাটাই।
+
+প্রিয় পত্রলেখা
+
+আমার প্রিয় পত্রলেখা
+
+<script>
+            const button = document.getElementById("playMusicButton");
+            const hiddenContent = document.getElementById("hidden-content");
+            const bgMusic = document.getElementById('bgMusic');
+          
+            button.addEventListener("click", () => {
+              hiddenContent.style.display = "block";
+              bgMusic.play();
+              button.style.display = "none";
+        
+            });
+        </script>
+
+
+
+
+animation: moveAnimation 8s infinite linear;
+@keyframes moveAnimation {
+        0%,100% {
+            transform: translate(0px,0px);
+            /*border-radius: 15%;*/
+        }
+        25% {
+            transform: translate(30px,60px);
+            box-shadow: -5px -2.5px 5px rgb(75, 75, 75);
+            /*border-radius: 5%;
+            border-top-left-radius: 25%;
+            border-bottom-right-radius: 25%;*/
+        }
+        50% {
+            transform: translate(0px,0px);
+            /*border-radius: 15%;*/
+        }
+        75% {
+            transform: translate(-30px,-60px);
+            box-shadow: 10px 15px 10px rgb(75, 75, 75);
+            /*border-radius: 5%;
+            border-top-right-radius: 25%;
+            border-bottom-left-radius: 25%;*/
+        }
+    }
+
+
+
+
+     
+
+
+        #img1{
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        border-radius: 0;
+        box-shadow: none;
+        opacity: 1;
+      }
+      #img2{
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        border-radius: 0;
+        box-shadow: none;
+        opacity: 1;
+      }
+      #img3{
+        left: 50%;
+      }
+      #img4{
+        left: calc(50% + 10px);
+      }
+      #img5{
+        left: calc(50% + 20px);
+      }
+      #img6{
+        left: calc(50% + 30px);
+      }
+
+
+      
+    .item {
+        width: 100px;
+        height: 200px;
+        list-style-type: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
+        transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+        
+       
+    }
+    .it1{
+        z-index: 6;
+    }
+    .it2{
+        z-index: 5;
+    }
+    .it3{
+        z-index: 4;
+    }
+    .it4{
+        z-index: 3;
+    }
+    .it5{
+        z-index: 2;
+    }
+    .it6{
+        z-index: 1;
+    }
+
+.it1{
+        order: 1;
+    }
+    .it2{
+        order: 2;
+    }
+    .it3{
+        order: 3;
+    }
+    .it4{
+        order: 4;
+    }
+    .it5{
+        order: 5;
+    }
+    .it6{
+        order: 6;
+    }
+      
+
+    &:nth-child(6) { left: calc(50% + 30px); opacity: 0; }
+        &:nth-child(5) { left: calc(50% + 20px); }
+        &:nth-child(4) { left: calc(50% + 10px); }
+        &:nth-child(3) { left: 50%; }
+        &:nth-child(1), &:nth-child(2) {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transform: none;
+            border-radius: 0;
+            box-shadow: none;
+            opacity: 1;
+        }
