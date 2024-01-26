@@ -246,6 +246,21 @@ span{
       box-shadow: 0 0 0 transparent;
     }
   }
+
+  @keyframes sparkle6 {
+    /* Same as sparkle1 but delayed by 1s */
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.5);
+      box-shadow: 0 0 1rem white;
+    }
+    100% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 transparent;
+    }
+  }
   
   .socialmedia a:nth-child(1) {
     animation: sparkle1 2s infinite ease-in-out;
@@ -270,6 +285,11 @@ span{
   .socialmedia a:nth-child(5) {
     animation: sparkle5 2s infinite ease-in-out;
     animation-delay: 0.8s;
+  }
+
+  .socialmedia a:nth-child(5) {
+    animation: sparkle6 2s infinite ease-in-out;
+    animation-delay: 1s;
   }
 
 
