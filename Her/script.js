@@ -7,6 +7,12 @@ const hideCon2 = document.getElementById("hide2");
 const hiddenContent = document.getElementById("hidden-content");
 const bgMusic = document.getElementById('bgMusic');
 
+
+window.onload = function() {
+    document.querySelector(".preloader").style.display = 'none';
+  }
+
+// Add event listener to playButton
 document.getElementById("playButton").addEventListener("click", () => {
   // Set opacity and transform to hide hideCon1 and hideCon2
   hideCon1.style.opacity = "0";
