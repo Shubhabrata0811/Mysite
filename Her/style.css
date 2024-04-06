@@ -29,6 +29,7 @@
 }
 
 
+
 body{
     background-image: url(images/bghide2.png);
     color: whitesmoke;
@@ -310,33 +311,33 @@ body{
 @media only screen and (max-width: 400px) {
 
 
-    .preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-        display: flex; /* Center the loader horizontally */
-        justify-content: center;
-        align-items: center;
-    }
-  
-  .loader {
-      border: 10px solid #f3f3f3; /* Gray border for the circle */
-      border-radius: 50%; /* Make it a perfect circle */
-      border-top-color: #3498db; /* Blue for the actual spinning part */
-      width: 80px;
-      height: 80px;
-      animation: spin 1s linear infinite; /* Animation for spinning */
-  }
-  
-  @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-  }
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex; /* Center the loader horizontally */
+    justify-content: center;
+    align-items: center;
+}
 
-  
+.loader {
+    border: 10px solid #f3f3f3; /* Gray border for the circle */
+    border-radius: 50%; /* Make it a perfect circle */
+    border-top-color: #3498db; /* Blue for the actual spinning part */
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite; /* Animation for spinning */
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
     body{
         background-image: url(images/bghide2.png);
         color: whitesmoke;

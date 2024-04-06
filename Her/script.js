@@ -10,6 +10,7 @@ const bgMusic = document.getElementById('bgMusic');
 
 window.onload = function() {
     document.querySelector(".preloader").style.display = 'none';
+    document.getElementById("page-content").style.display = 'block';
   }
 
 // Add event listener to playButton
